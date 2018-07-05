@@ -22,7 +22,7 @@ pod 'DCLogger'
 
 ## Author
 
-dcortes22, dcortes22@gmail.com
+David Cortes, [@dcortes22](https://twitter.com/dcortes22)
 
 ## License
 

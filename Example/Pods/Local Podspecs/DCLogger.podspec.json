@@ -1,0 +1,22 @@
+{
+  "name": "DCLogger",
+  "version": "0.1.0",
+  "summary": "A short description of DCLogger.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dcortes22/DCLogger",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dcortes22": "dcortes22@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dcortes22/DCLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DCLogger/Classes/**/*"
+}

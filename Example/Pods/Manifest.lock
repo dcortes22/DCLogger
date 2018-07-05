@@ -1,0 +1,22 @@
+PODS:
+  - DCLogger (0.1.0)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - DCLogger (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+
+EXTERNAL SOURCES:
+  DCLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DCLogger: c9bfe52d9eb61be8fd2fc3d84b7f14034534cfac
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: cc77a4ab0475f60199ffd2e394998f80efc5ace9
+
+COCOAPODS: 1.2.1
