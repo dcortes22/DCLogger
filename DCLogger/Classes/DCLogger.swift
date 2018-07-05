@@ -60,7 +60,7 @@ public class DCLogger:NSObject {
         super.init()
     }
     
-    class func log(_ level:LoggerLevel, message:String, currentTime:Date, fileName:String, functionName:String, lineNumber:Int, thread:Thread) {
+    public class func log(_ level:LoggerLevel, message:String, currentTime:Date, fileName:String, functionName:String, lineNumber:Int, thread:Thread) {
         #if DEBUG
         guard level.rawValue >= self.level.rawValue else { return }
         
@@ -74,19 +74,19 @@ public class DCLogger:NSObject {
         #endif
     }
     
-    class func info(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
+    public class func info(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
         log(.info, message: message, currentTime: currentTime, fileName: fileName, functionName: functionName, lineNumber: lineNumber, thread: thread)
     }
     
-    class func debug(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
+    public class func debug(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
         log(.debug, message: message, currentTime: currentTime, fileName: fileName, functionName: functionName, lineNumber: lineNumber, thread: thread)
     }
     
-    class func warning(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
+    public class func warning(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
         log(.warning, message: message, currentTime: currentTime, fileName: fileName, functionName: functionName, lineNumber: lineNumber, thread: thread)
     }
     
-    class func error(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
+    public class func error(_ message: String, currentTime: Date = Date(), fileName: String = #file, functionName: String = #function, lineNumber: Int = #line, thread: Thread = Thread.current) {
         log(.error, message: message, currentTime: currentTime, fileName: fileName, functionName: functionName, lineNumber: lineNumber, thread: thread)
     }
 }
