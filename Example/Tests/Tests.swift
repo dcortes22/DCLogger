@@ -43,7 +43,7 @@ class TableOfContentsSpec: QuickSpec {
                 self.startLogging()
                 DCLogger.ouput = .deviceConsole
                 DCLogger.log(.info, message: "test", currentTime: date, fileName: "Test.swift", functionName: "test", lineNumber: 1, thread: Thread())
-                let isRecorded = self.recordLog(logged: "ℹ️Info")
+                let isRecorded = self.recordLog(logged: "ℹ️ Info")
                 self.closeLogging()
                 expect(isRecorded) == true
             }
@@ -53,7 +53,7 @@ class TableOfContentsSpec: QuickSpec {
                 self.startLogging()
                 DCLogger.ouput = .deviceConsole
                 DCLogger.log(.debug, message: "test", currentTime: date, fileName: "Test.swift", functionName: "test", lineNumber: 1, thread: Thread())
-                let isRecorded = self.recordLog(logged: "⌨️Debug")
+                let isRecorded = self.recordLog(logged: "⌨️ Debug")
                 self.closeLogging()
                 expect(isRecorded) == true
             }
@@ -63,7 +63,7 @@ class TableOfContentsSpec: QuickSpec {
                 self.startLogging()
                 DCLogger.ouput = .deviceConsole
                 DCLogger.log(.warning, message: "test", currentTime: date, fileName: "Test.swift", functionName: "test", lineNumber: 1, thread: Thread())
-                let isRecorded = self.recordLog(logged: "⚠️Warning")
+                let isRecorded = self.recordLog(logged: "⚠️ Warning")
                 self.closeLogging()
                 expect(isRecorded) == true
             }
@@ -73,7 +73,7 @@ class TableOfContentsSpec: QuickSpec {
                 self.startLogging()
                 DCLogger.ouput = .deviceConsole
                 DCLogger.log(.error, message: "test", currentTime: date, fileName: "Test.swift", functionName: "test", lineNumber: 1, thread: Thread())
-                let isRecorded = self.recordLog(logged: "❌Error")
+                let isRecorded = self.recordLog(logged: "❌ Error")
                 self.closeLogging()
                 expect(isRecorded) == true
             }
@@ -83,7 +83,7 @@ class TableOfContentsSpec: QuickSpec {
                 self.startLogging()
                 DCLogger.ouput = .deviceConsole
                 DCLogger.log(.none, message: "test", currentTime: date, fileName: "Test.swift", functionName: "test", lineNumber: 1, thread: Thread())
-                let isRecorded = self.recordLog(logged: "❕None")
+                let isRecorded = self.recordLog(logged: "❕ None")
                 self.closeLogging()
                 expect(isRecorded) == true
             }
