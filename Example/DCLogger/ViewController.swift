@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import DCLogger
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        DCLogger.tag = "Sample"
+        DCLogger.info("View Did Load")
+        DCLogger.error("Testing error")
+        DCLogger.warning("Testing Warning")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        DCLogger.debug("View Will Appear")
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated
     }
 
 }
