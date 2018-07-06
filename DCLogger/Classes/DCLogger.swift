@@ -65,7 +65,7 @@ public class DCLogger:NSObject {
         guard level.rawValue >= self.level.rawValue else { return }
         
         let _fileName = fileName.split(separator: "/")
-        let logText = "\(thread.isMainThread ? "[UI]" : "[BG]")[\(_fileName.last ?? "?")#\(functionName)#\(lineNumber)]\(tag ?? "")-\(level.icon) \(level.name): \(message)"
+        let logText = "\(thread.isMainThread ? "[UI]" : "[BG]")[\(_fileName.last ?? "?")#\(functionName)#\(lineNumber)]\(tag ?? "") - \(level.icon) \(level.name): \(message)"
         if self.ouput == .deviceConsole {
             NSLog(logText)
         }else {
